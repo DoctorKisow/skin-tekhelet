@@ -20,47 +20,47 @@ The Tekhelet theme is based in part on the Tyrian theme by Alex Legler.
 
 ##### assets.example.com
 _The example below is for an Apache VirtualHost._  
-_This configuration will serve the Tekhelet theme to MediaWiki over https and deny all other connections._
+_This configuration will serve the Tekhelet theme to MediaWiki over https and deny all other connections._  
 `<VirtualHost _default_:80>`  
 `	 ServerName assets.example.com`  
 `     ServerAdmin webmaster@example.com`  
 `	 DocumentRoot /var/www/assets.example.com`  
-``
+
 `     Redirect / "https://assets.example.com/"`  
-``
+
 `     ErrorLog ${APACHE_LOG_DIR}/assets.example.com.error.log`  
 `     CustomLog ${APACHE_LOG_DIR}/assets.example.com.log combined`  
 `	 ServerSignature Off`  
 `</VirtualHost>`  
-``
+
 `<VirtualHost _default_:443>`  
-`     ServerName assets.example.com`  
-`     ServerAdmin webmaster@example.com`  
-`     DocumentRoot /var/www/assets.example.com`  
-``
-`     Header always add Strict-Transport-Security "max-age=15768000; includeSubDomains; preload"`  
-``
-`     SSLEngine on`  
-`     SSLCipherSuite EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH`  
-`     SSLHonorCipherOrder on`  
-``
-`     SSLCertificateFile /etc/letsencrypt/live/assets.example.com/cert.pem`  
-`     SSLCertificateKeyFile /etc/letsencrypt/live/assets.example.com/privkey.pem`  
-`     SSLCertificateChainFile /etc/letsencrypt/live/assets.example.com/chain.pem`  
-``
+`    ServerName assets.example.com`  
+`    ServerAdmin webmaster@example.com`  
+`    DocumentRoot /var/www/assets.example.com`  
+
+`    Header always add Strict-Transport-Security "max-age=15768000; includeSubDomains; preload"`  
+
+`    SSLEngine on`  
+`    SSLCipherSuite EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH`  
+`    SSLHonorCipherOrder on`  
+
+`    SSLCertificateFile /etc/letsencrypt/live/assets.example.com/cert.pem`  
+`    SSLCertificateKeyFile /etc/letsencrypt/live/assets.example.com/privkey.pem`  
+`    SSLCertificateChainFile /etc/letsencrypt/live/assets.example.com/chain.pem`  
+
 `    <Directory "/var/www/assets.example.com">`  
 `		Options -Indexes`  
 `		AllowOverride None`  
 `		Require all granted`  
 `	</Directory>`  
-``
+
 `	<IfModule mod_headers.c>`  
 `		<FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|font.css|css|js)$">`  
 `			Header set Access-Control-Allow-Origin "https://wiki.example.com"`  
 `		</FilesMatch>`  
 `	</IfModule>`  
-``
-`     ErrorLog ${APACHE_LOG_DIR}/assets.example.com.error.log`  
-`     CustomLog ${APACHE_LOG_DIR}/assets.example.com.access.log combined`  
+
+`    ErrorLog ${APACHE_LOG_DIR}/assets.example.com.error.log`  
+`    CustomLog ${APACHE_LOG_DIR}/assets.example.com.access.log combined`  
 `	ServerSignature Off`  
 `</VirtualHost>`
