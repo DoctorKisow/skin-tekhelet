@@ -20,7 +20,7 @@ The Tekhelet theme is based in part on the Tyrian theme by Alex Legler.
 
 ## Apache VirtualHost Example
 _The configuration below will serve the Tekhelet theme to your MediaWiki server over a secure connection and deny all other connections._  
-```<VirtualHost _default_:80>  
+<VirtualHost _default_:80>  
     ServerName assets.example.com  
     ServerAdmin webmaster@example.com  
     DocumentRoot /var/www/assets.example.com  
@@ -30,36 +30,36 @@ _The configuration below will serve the Tekhelet theme to your MediaWiki server 
     ErrorLog ${APACHE_LOG_DIR}/assets.example.com.error.log  
     CustomLog ${APACHE_LOG_DIR}/assets.example.com.log combined  
     ServerSignature Off  
-</VirtualHost>```  
+</VirtualHost>  
 
-`<VirtualHost _default_:443>`  
-`    ServerName assets.example.com`  
-`    ServerAdmin webmaster@example.com`  
-`    DocumentRoot /var/www/assets.example.com`  
+<VirtualHost _default_:443>  
+    ServerName assets.example.com  
+    ServerAdmin webmaster@example.com  
+    DocumentRoot /var/www/assets.example.com  
 
-`    Header always add Strict-Transport-Security "max-age=15768000; includeSubDomains; preload"`  
+    Header always add Strict-Transport-Security "max-age=15768000; includeSubDomains; preload"  
 
-`    SSLEngine on`  
-`    SSLCipherSuite EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH`  
-`    SSLHonorCipherOrder on`  
+    SSLEngine on  
+    SSLCipherSuite EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH  
+    SSLHonorCipherOrder on  
 
-`    SSLCertificateFile /etc/letsencrypt/live/assets.example.com/cert.pem`  
-`    SSLCertificateKeyFile /etc/letsencrypt/live/assets.example.com/privkey.pem`  
-`    SSLCertificateChainFile /etc/letsencrypt/live/assets.example.com/chain.pem`  
+    SSLCertificateFile /etc/letsencrypt/live/assets.example.com/cert.pem  
+    SSLCertificateKeyFile /etc/letsencrypt/live/assets.example.com/privkey.pem  
+    SSLCertificateChainFile /etc/letsencrypt/live/assets.example.com/chain.pem  
 
-`    <Directory "/var/www/assets.example.com">`  
-`		Options -Indexes`  
-`		AllowOverride None`  
-`		Require all granted`  
-`	</Directory>`  
+    <Directory "/var/www/assets.example.com">  
+        Options -Indexes  
+        AllowOverride None  
+        Require all granted  
+    </Directory>  
 
-`	<IfModule mod_headers.c>`  
-`		<FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|font.css|css|js)$">`  
-`			Header set Access-Control-Allow-Origin "https://wiki.example.com"`  
-`		</FilesMatch>`  
-`	</IfModule>`  
+    <IfModule mod_headers.c>  
+        <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|font.css|css|js)$">  
+            Header set Access-Control-Allow-Origin "https://wiki.example.com"  
+        </FilesMatch>  
+    </IfModule>  
 
-`    ErrorLog ${APACHE_LOG_DIR}/assets.example.com.error.log`  
-`    CustomLog ${APACHE_LOG_DIR}/assets.example.com.access.log combined`  
-`	ServerSignature Off`  
-`</VirtualHost>`
+    ErrorLog ${APACHE_LOG_DIR}/assets.example.com.error.log  
+    CustomLog ${APACHE_LOG_DIR}/assets.example.com.access.log combined  
+    ServerSignature Off  
+</VirtualHost>
