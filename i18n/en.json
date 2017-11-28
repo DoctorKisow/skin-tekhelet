@@ -1,0 +1,7 @@
+{
+	"@metadata": {"authors": ["Matthew R. Kisow, D.Sc."]},
+	"skinname-tekhelet": "Tekhelet",
+	"tekhelet-desc": "The Kisow Foundation theme ported to MediaWiki.",
+	"tekhelet.css": "/* Any CSS placed here will affect all users of the Tekhelet skin. */",
+	"tekhelet.js": "/* Any JavaScript placed here will be loaded for all users using the Tekhelet skin. */"
+}

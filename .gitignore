@@ -1,0 +1,2 @@
+# Exclude all ".DS_Store" file(s) in the entire project.
+.DS_Store

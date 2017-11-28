@@ -1,0 +1,7 @@
+{
+	"@metadata": {"authors": ["Matthew R. Kisow, D.Sc."]},
+	"skinname-tekhelet": "{{optional}}",
+	"tekhelet-desc": "{{desc|what=skin|name=Tekhelet|url=https://github.com/DoctorKisow/skin-tekhelet}}",
+	"tekhelet.css": "{{optional}}\nCSS applied to users using Tekhelet skin.",
+	"tekhelet.js": "{{optional}}\nJS for users using Tekhelet skin."
+}
