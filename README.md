@@ -26,7 +26,7 @@ _The configuration below will serve the Tekhelet theme to your MediaWiki server 
           DocumentRoot /var/www/assets.example.com  
 
           Redirect / "https://assets.example.com/"  
-
+            
           ErrorLog ${APACHE_LOG_DIR}/assets.example.com.error.log  
           CustomLog ${APACHE_LOG_DIR}/assets.example.com.log combined  
           ServerSignature Off  
