@@ -20,17 +20,17 @@ The Tekhelet theme is based in part on the Tyrian theme by Alex Legler.
 
 ## Apache VirtualHost Example
 _The configuration below will serve the Tekhelet theme to your MediaWiki server over a secure connection and deny all other connections._  
-     `<VirtualHost _default_:80>`  
-          `ServerName assets.example.com`  
-          `ServerAdmin webmaster@example.com`  
-          `DocumentRoot /var/www/assets.example.com`  
+     `<VirtualHost _default_:80>  
+          ServerName assets.example.com  
+          ServerAdmin webmaster@example.com  
+          DocumentRoot /var/www/assets.example.com  
 
-          `Redirect / "https://assets.example.com/"`  
+          Redirect / "https://assets.example.com/"  
 
-          `ErrorLog ${APACHE_LOG_DIR}/assets.example.com.error.log`  
-          `CustomLog ${APACHE_LOG_DIR}/assets.example.com.log combined`  
-          `ServerSignature Off`  
-     `</VirtualHost>`  
+          ErrorLog ${APACHE_LOG_DIR}/assets.example.com.error.log  
+          CustomLog ${APACHE_LOG_DIR}/assets.example.com.log combined  
+          ServerSignature Off  
+     </VirtualHost>`  
 
 `<VirtualHost _default_:443>`  
 `    ServerName assets.example.com`  
