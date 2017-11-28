@@ -6,7 +6,7 @@ Copyright &copy; 2015-2017, Kisow Foundation, Inc.&reg;
 
 The Tekhelet theme is based in part on the Tyrian theme by Alex Legler.
 
-##### Install MediaWiki Skin.
+## Install the MediaWiki Skin
 1. Download and compile the "_**tekhelet-source**_" from: https://github.com/DoctorKisow/tekhelet-source.git
    See the **README.md** or **README.txt** file located in the tekhelet-source directory for the compile instructions.
 2. After compiling the theme, copy the contents from the **tekhelet-source/assets** folder to a directory
@@ -18,19 +18,18 @@ The Tekhelet theme is based in part on the Tyrian theme by Alex Legler.
    _$wgDefaultSkin = 'Tekhelet';  
    require_once "$IP/skins/Tekhelet/Tekhelet.php";_  
 
-##### assets.example.com
-_The example below is for an Apache VirtualHost._  
-_This configuration will serve the Tekhelet theme to MediaWiki over https and deny all other connections._  
+## Apache VirtualHost Example
+_The configuration below will serve the Tekhelet theme to your MediaWiki server over a secure connection and deny all other connections._  
 `<VirtualHost _default_:80>`  
-`	 ServerName assets.example.com`  
-`     ServerAdmin webmaster@example.com`  
-`	 DocumentRoot /var/www/assets.example.com`  
+`  ServerName assets.example.com`  
+`  ServerAdmin webmaster@example.com`  
+`  DocumentRoot /var/www/assets.example.com`  
 
-`     Redirect / "https://assets.example.com/"`  
+`  Redirect / "https://assets.example.com/"`  
 
-`     ErrorLog ${APACHE_LOG_DIR}/assets.example.com.error.log`  
-`     CustomLog ${APACHE_LOG_DIR}/assets.example.com.log combined`  
-`	 ServerSignature Off`  
+`  ErrorLog ${APACHE_LOG_DIR}/assets.example.com.error.log`  
+`  CustomLog ${APACHE_LOG_DIR}/assets.example.com.log combined`  
+`  ServerSignature Off`  
 `</VirtualHost>`  
 
 `<VirtualHost _default_:443>`  
