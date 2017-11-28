@@ -6,15 +6,27 @@ Copyright &copy; 2015-2017, Kisow Foundation, Inc.&reg;
 
 The Tekhelet theme is based in part on the Tyrian theme by Alex Legler.
 
+## Typical Directory Structure
+     var  
+     |--  www  
+     |--  assets.example.com  
+     |    |--  Tekhelet  
+     |  
+     |--  wiki.example.com  
+          |--  skins  
+               |--  Tekhelet  
+
 ## Install the MediaWiki Skin
-1. Download and compile the "_**tekhelet-source**_" from: https://github.com/DoctorKisow/tekhelet-source.git
-   See the **README.md** or **README.txt** file located in the tekhelet-source directory for the compile instructions.
-2. After compiling the theme, copy the contents from the **tekhelet-source/assets** folder to a directory
-   "_**Tekhelet**_" located on a different VirtualHost, for example: https://assets.example.com/Tekhelet.  This
-   is where the MediaWiki skin "_**skin-tekhelet**_" will pull the theme from.
-3. Download the "_**skin-tekhelet**_" MediaWiki skin from: https://github.com/DoctorKisow/skin-tekhelet.git
-   and install to your MediaWiki skins directory.
-4. In your **LocalSettings.php** add the following line(s) at the end of the file:  
+1. Download and compile the ["_**tekhelet-source**_"](https://github.com/DoctorKisow/tekhelet-source.git) theme.
+   See the **README.md** or **README.txt** file(s) located in the **tekhelet-source** directory for the compile instructions.
+2. After compiling the theme, copy the contents of the **tekhelet-source/assets** folder to the Tekhelet  directory on the assets.example.com VirtualHost:  
+   `mkdir -p /var/www/assets.example.com/Tekhelet`  
+   `cp tekhelet-source/assets/ /var/www/assets.example.com/Tekhelet/`  
+3. From your MediaWiki skins directory the clone skin-tekhelet from this repository by typing:  
+   `mkdir -p /var/www/wiki.example.com/skins/Tekhelet`  
+   `cd /var/www/wiki.example.com/skins/Tekhelet`  
+   `git clone https://github.com/DoctorKisow/skin-tekhelet.git`  
+4. In your MediaWiki **LocalSettings.php** configuration add the following line(s) at the end of the file:  
    _$wgDefaultSkin = 'Tekhelet';  
    require_once "$IP/skins/Tekhelet/Tekhelet.php";_  
 
