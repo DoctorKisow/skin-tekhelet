@@ -178,7 +178,7 @@ class TekheletTemplate extends BaseTemplate {
 						The Kisow Foundation&reg; is a registered trademark of the Kisow Foundation, Inc.
 						The contents of this document, unless otherwise expressly stated, are licensed under the
 						<a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license">CC-BY-SA-3.0</a> license.
-						The <a href="https://wiki.kisow.org/wiki/Kisow_Foundation:Copyright">Kisow Foundation Name and Logo Usage Guidelines</a> apply.
+						The <a href="https://wiki.kisow.org/wiki/Foundation:Copyright">Kisow Foundation Name and Logo Usage Guidelines</a> apply.
 					</small>
 				</div>
 			</div>
