@@ -2,7 +2,7 @@
 /**
   * Tekhelet - The look of the Kisow Foundation Wiki.
   * Matthew R. Kisow, D.Sc. <matthew.kisow@kisow.org>
-  * Copyright, Kisow Foundation, Inc. 2015-2017.
+  * Copyright, Kisow Foundation, Inc. 2015-2018.
   *
   * The Tekhelet theme is based in part on the Tyrian theme by Alex Legler.
  **/
