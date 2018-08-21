@@ -19,7 +19,7 @@ This is a theme based on the bootstrap3 framework from Twitter.
 ```
 
 ## Installation
-1. Download and compile the ["_**tekhelet-source**_"](https://github.com/DoctorKisow/tekhelet-source.git) theme.
+1. Download and compile the ["_**tekhelet-source**_"](https://github.com/DoctorKisow/tekhelet-source.git) theme.  
    See the **README.md** or **README.txt** file(s) located in the **tekhelet-source** directory for the compile instructions.
 
 2. After compiling the theme, copy the contents of the **tekhelet-source/assets** folder to the **Tekhelet**  directory on the _assets.example.com_ VirtualHost:
